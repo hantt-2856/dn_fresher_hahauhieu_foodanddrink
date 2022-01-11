@@ -6,7 +6,8 @@ class SessionsController < ApplicationController
     if user&.authenticate params[:session][:password]
       flash[:success] = t ".login_success"
       log_in user
-      redirect_to root_path
+      redirect_to admin_root_path if is_admin?
+      redirect_to root_path unless is_admin?
     else
       flash.now[:warning] = t ".login_fail"
       render :new

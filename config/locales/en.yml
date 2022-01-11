@@ -40,6 +40,7 @@ en:
       fresh_meat: "Fresh Meat"
   hello: "Hello world"
   sign_up: "Sign Up"
+  log_in: "Sign in"
   sessions:
     new:
       email: "Email"
@@ -55,3 +56,9 @@ en:
   errors:
     not_found: "Not Found!!!"
     not_found_product: "Not Found Product!!!"
+  admin:
+    layouts:
+      header:
+    static_pages:
+      home:
+        forbiden: "You need administrator's permission to access this page!"

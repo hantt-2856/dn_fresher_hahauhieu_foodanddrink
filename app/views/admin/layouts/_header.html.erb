@@ -1,0 +1,98 @@
+<div class="top_nav">
+  <div class="nav_menu">
+    <div class="nav toggle">
+      <div class="dropdown menu_toggle">
+        <span class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+          <%= image_tag "language.png" %>
+          <%= t ".english" %>
+        </span>
+        <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+            <%= link_to t(".english"), url_for(locale: :en), class:"dropdown-item" %>
+            <%= link_to t(".vietnamese"), url_for(locale: :vi), class:"dropdown-item" %>
+        </div>
+      </div>
+    </div>
+    <nav class="nav navbar-nav">
+      <ul class=" navbar-right">
+        <li class="nav-item dropdown open" style="padding-left: 15px;">
+          <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+            <%= image_tag "admin/img.jpg" %>John Doe
+          </a>
+          <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+            <%= link_to t(".profile"), url_for("#"), class:"dropdown-item" %>
+            <%= link_to t(".log_out"), logout_path, method: :delete, class:"dropdown-item" %>
+          </div>
+        </li>
+
+        <li role="presentation" class="nav-item dropdown open">
+          <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+            <li class="nav-item">
+              <a class="dropdown-item">
+                <span class="image">
+                  <%= image_tag "admin/img.jpg" %>John Doe
+                </span>
+                <span>
+                  <span>John Smith</span>
+                  <span class="time">3 mins ago</span>
+                </span>
+                <span class="message">
+                  Film festivals used to be do-or-die moments for movie makers. They were where...
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="dropdown-item">
+                <span class="image">
+                  <%= image_tag "admin/img.jpg" %>
+                </span>
+                <span>
+                  <span>John Smith</span>
+                  <span class="time">3 mins ago</span>
+                </span>
+                <span class="message">
+                  Film festivals used to be do-or-die moments for movie makers. They were where...
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="dropdown-item">
+                <span class="image">
+                  <%= image_tag "admin/img.jpg" %>
+                </span>
+                <span>
+                  <span>John Smith</span>
+                  <span class="time">3 mins ago</span>
+                </span>
+                <span class="message">
+                  Film festivals used to be do-or-die moments for movie makers. They were where...
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="dropdown-item">
+                <span class="image">
+                  <%= image_tag "admin/img.jpg" %>
+                </span>
+                <span>
+                  <span>John Smith</span>
+                  <span class="time">3 mins ago</span>
+                </span>
+                <span class="message">
+                  Film festivals used to be do-or-die moments for movie makers. They were where...
+                </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="text-center">
+                <a class="dropdown-item">
+                  <strong>See All Alerts</strong>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

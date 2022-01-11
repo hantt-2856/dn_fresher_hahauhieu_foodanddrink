@@ -40,6 +40,7 @@ vi:
       fresh_meat: "Thịt đỏ"
   hello: "Hello world"
   sign_up: "Đăng ký"
+  log_in: "Đăng nhập"
   sessions:
     new:
       email_req: "Định dạng email bắt buộc: ex@abc.xyz"
@@ -55,3 +56,9 @@ vi:
   errors:
     not_found: "Không tìm thấy!!!"
     not_found_product: "Không tìm thấy sản phẩm!!!"
+  admin:
+    layouts:
+      header:
+    static_pages:
+      home:
+        forbiden: "Bạn cần quyền admin để truy cập trang này!"
