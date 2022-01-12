@@ -1,0 +1,14 @@
+  <%= @orders.each do |item| %>
+    <tr>
+      <td scope="row"><%= item.id %></td>
+      <td><%= item.user.fullname %></td>
+      <td><%= item.user.email %></td>
+      <td><%= item.address %></td>
+      <td><%= item.phone %></td>
+      <td><%= item.status %></td>
+      <td><%= item.created_at %></td>
+      <td><%= item.total_price %></td>
+      <td><%= t ".update" %></td>
+      <td><%= t ".delete" %></td>
+    </tr>
+  <% end %>

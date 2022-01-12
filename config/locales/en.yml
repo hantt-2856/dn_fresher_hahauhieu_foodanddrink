@@ -62,3 +62,5 @@ en:
     static_pages:
       home:
         forbiden: "You need administrator's permission to access this page!"
+        admin_homepage: "Admin home"
+        hello_admin: "Hello Admin!"
