@@ -344,11 +344,7 @@ DEPENDENCIES
   byebug
   capybara (>= 3.26)
   config
-<<<<<<< HEAD
   database_cleaner
-=======
-  database_cleaner (~> 1.5)
->>>>>>> [Admin] test order model
   enum_help
   factory_bot_rails
   faker
