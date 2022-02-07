@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale, :load_cart
-
   include SessionsHelper
   include Pagy::Backend
 
@@ -18,13 +17,5 @@ class ApplicationController < ActionController::Base
 
   def load_cart
     session[:cart] ||= {}
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "errors.not_login"
-    redirect_to login_url
   end
 end

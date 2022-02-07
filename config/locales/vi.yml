@@ -70,6 +70,15 @@ vi:
     create:
       login_success: "Đăng nhập thành công!!!"
       login_fail: "Đăng nhập thất bại!!!"
+  devise:
+    failure:
+      user:
+        invalid: "Email hoặc mật khẩu không đúng"
+        already_authenticated: "Bạn đã đăng nhập"
+    sessions:
+      user:
+        signed_in: "Đăng nhập thành công!"
+        signed_out: "Đã đăng xuất"
   errors:
     not_found: "Không tìm thấy!!!"
     not_found_product: "Không tìm thấy sản phẩm!!!"

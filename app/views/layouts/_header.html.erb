@@ -21,7 +21,7 @@
                 <li><%= link_to t(".vietnamese"), locale: :vi %></li>
               </ul>
             </div>
-            <% if logged_in? %>
+            <% if user_signed_in? %>
               <div class="header__top__right__language">
                 <%= link_to current_user.fullname, current_user %>
                 <span class="arrow_carrot-down"></span>

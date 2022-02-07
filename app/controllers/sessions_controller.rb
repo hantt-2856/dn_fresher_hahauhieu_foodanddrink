@@ -1,21 +1,10 @@
-class SessionsController < ApplicationController
-  def new; end
-
+class SessionsController < Devise::SessionsController
   def create
-    user = User.find_by email: params[:session][:email].downcase
-    if user&.authenticate params[:session][:password]
-      flash[:success] = t ".login_success"
-      log_in user
-      response_page
-    else
-      flash.now[:warning] = t ".login_fail"
-      render :new
-    end
-  end
-
-  def destroy
-    log_out
-    redirect_to root_path
+    self.resource = warden.authenticate!(auth_options)
+    set_flash_message!(:notice, :signed_in)
+    sign_in(resource_name, resource)
+    yield resource if block_given?
+    response_page
   end
 
   private
