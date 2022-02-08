@@ -75,6 +75,7 @@ en:
       user:
         invalid: "Email or password invalid!"
         already_authenticated: "You already authenticated!"
+        unauthenticated: "Please sign in to use this function"
     sessions:
       user:
         signed_in: "Signed in!"
@@ -239,3 +240,7 @@ en:
       total_price_item: "Total pricee item"
       close: "Close"
       total_price: "Total price"
+      status: "Status:  "
+      created_at: "Created at:  "
+  cancancan:
+    permission_denied: "You don't have permission to access this page!"

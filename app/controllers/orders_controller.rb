@@ -1,5 +1,6 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!
+  load_and_authorize_resource
   before_action :check_invalid_order, only: %i(new create)
   before_action :build_order, :build_order_detail, only: :create
   before_action :find_order, only: :show

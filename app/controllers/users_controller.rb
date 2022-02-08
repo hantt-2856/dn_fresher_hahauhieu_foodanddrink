@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :authenticate_user!, :correct_user, :find_user, only: :show
+  load_and_authorize_resource
 
   def show
     @pagy, @user_orders = pagy(@user.orders.sort_orders,

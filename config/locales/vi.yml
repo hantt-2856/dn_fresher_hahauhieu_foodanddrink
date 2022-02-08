@@ -75,6 +75,7 @@ vi:
       user:
         invalid: "Email hoặc mật khẩu không đúng"
         already_authenticated: "Bạn đã đăng nhập"
+        unauthenticated: "Vui lòng đăng nhập để sử dụng chức năng này!"
     sessions:
       user:
         signed_in: "Đăng nhập thành công!"
@@ -234,3 +235,7 @@ vi:
       total_price_item: "Tổng giá sản phẩm"
       close: "Đóng"
       total_price: "Tổng giá thanh toán"
+      status: "Trạng thái:  "
+      created_at: "Ngày tạo:  "
+  cancancan:
+    permission_denied: "Bạn không có quyền truy cập trang này"
