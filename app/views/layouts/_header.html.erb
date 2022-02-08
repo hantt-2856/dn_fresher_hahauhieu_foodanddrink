@@ -96,8 +96,9 @@
       <div class="col-lg-9">
         <div class="hero__search">
           <div class="hero__search__form">
-            <%= form_tag(products_path, method: :get) do %>
-              <%= text_field_tag :term, params[:term], placeholder: t(".placeholder") %>
+            <%= search_form_for @q, url: search_products_path do |f| %>
+              <span><%= f.text_field :name_cont, placeholder: t(".placeholder") %></span>
+              <span><%= f.text_field :price_lteq, placeholder: t(".price_lteq") %></span>
               <button type="submit" class="site-btn"><%= t ".search" %></button>
             <% end %>
           </div>
@@ -113,5 +114,18 @@
         </div>
       </div>
     </div>
-  </div>
+    <div class="row mb-5 text-dark">
+      <div class="col-lg-3">
+        <div class="hero__categories">
+          <div class="hero__categories__all" style="background-color: #7FAD39">
+            <span><%= t ".sort_by" %></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <button class="btn btn-light"><%= sort_link(@q, :name, t(".name")) %></button>
+        <button class="btn btn-info"><%= sort_link(@q, :price, t(".price")) %></button>
+        <button class="btn btn-warning"><%= sort_link(@q, :rating, t(".rating")) %></button>
+      </div>
+    </div>
 </header>

@@ -2,6 +2,10 @@ en:
   title: "OGANI"
   layouts:
     header:
+      name: "Product name"
+      price: "Price"
+      rating: "Đánh giá"
+      sort_by: "Rating"
       home: "Home"
       help: "Help"
       contact: "Contact"
@@ -17,6 +21,7 @@ en:
       shop: "Shop"
       all_categories: "All categories"
       search: "SEARCH"
+      price_lteq: "Price less than..."
       placeholder: "What do you need?"
       history: "History"
       settings: "Settings"
@@ -90,23 +95,6 @@ en:
     nav:
       prev: "Prev"
       next: "Next"
-  products:
-    index:
-      products: "Products"
-      all_products: "All products"
-      list_products: "List products"
-      products_management: "Products Management"
-      list_products_empty: "List products empty"
-      action: "Action"
-      number: "Number"
-      name: "Name"
-      price: "Price ($)"
-      quantity: "Quantity"
-      rating: "Rating"
-      products: "Products"
-      all_products: "All products"
-    all_products:
-      price: "$%{price}"
     show:
       add_cart: "ADD TO CART"
     product:
@@ -135,6 +123,21 @@ en:
     reset:
       reset_success: "Reset cart success"
   admin:
+    products:
+      index:
+        products: "Products"
+        all_products: "All products"
+        list_products: "List products"
+        products_management: "Products Management"
+        list_products_empty: "List products empty"
+        action: "Action"
+        number: "Number"
+        name: "Name"
+        price: "Price ($)"
+        quantity: "Quantity"
+        rating: "Rating"
+        products: "Products"
+        all_products: "All products"
     layouts:
       header:
         english: "English"

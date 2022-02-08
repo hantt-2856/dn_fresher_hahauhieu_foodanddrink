@@ -11,7 +11,11 @@ Rails.application.routes.draw do
 
     get "/home", to: "static_pages#home"
     resources :users, only: :show
-    resources :products, only: %i(index show)
+    resources :products, only: %i(index show) do
+      collection do
+        match "search" => "products#index", via: [:get, :post], as: :search
+      end
+    end
     resources :carts, only: %i(create index destroy) do
       collection do
         get "reset"

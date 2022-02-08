@@ -2,12 +2,13 @@ class ProductsController < ApplicationController
   before_action :load_product, only: :show
 
   def index
-    products = Product.search(params[:term]).newest
-    if products.empty?
+    @product = @q.result
+    if @product.empty?
       flash[:danger] = t "errors.not_found_product"
       redirect_to products_path
     else
-      @pagy, @products = pagy products, items: Settings.number.digit_12
+      @pagy, @products = pagy @product, items: Settings.number.digit_12
+      render :index
     end
   end
 

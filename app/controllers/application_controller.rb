@@ -1,7 +1,12 @@
 class ApplicationController < ActionController::Base
   before_action :set_locale, :load_cart
+  before_action :set_global_search_variable
   include SessionsHelper
   include Pagy::Backend
+
+  def set_global_search_variable
+    @q = Product.ransack params[:q]
+  end
 
   private
 

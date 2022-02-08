@@ -489,10 +489,16 @@ ol {
 	position: absolute;
 	right: 18px;
 	top: 9px;
-	content: "3";
-	font-family: "ElegantIcons";
 	font-size: 18px;
 	color: #ffffff;
+}
+a.sort_link {
+	color: #000;
+	font-size: 16px;
+	line-height: 1.7;
+}
+a.sort_link :hover{
+	color: orange;
 }
 .hero__categories ul {
 	border: 1px solid #ebebeb;
@@ -546,8 +552,8 @@ ol {
 	top: 14px;
 }
 .hero__search__form form input {
-	width: 70%;
-	border: none;
+	width: 40%;
+	border: solid 1px;
 	height: 48px;
 	font-size: 16px;
 	color: #b2b2b2;
@@ -2982,9 +2988,6 @@ ol {
 		margin-bottom: 30px;
 	}
 	.hero__search__form {
-		width: 100%;
-	}
-	.hero__search__form form input {
 		width: 100%;
 	}
 	.hero__search__form form .hero__search__categories {
