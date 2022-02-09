@@ -2,7 +2,7 @@
 <div class="limiter">
   <div class="container-login100">
     <div class="wrap-login100">
-      <%= form_for :session, url: login_path, html: {class: "login100-form validate-form"} do |f| %>
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "login100-form validate-form"}) do |f| %>
         <span class="login100-form-title p-b-43">
           <%= t "log_in" %>
         </span>
@@ -16,14 +16,18 @@
         </div>
         <div class="flex-sb-m w-full p-t-3 p-b-32">
           <div class="contact100-form-checkbox">
-            <%= f.label :remember_me do %>
-              <%= f.check_box :remember_me %>
-              <span><%= t ".remember_me"%></span>
+            <% if devise_mapping.rememberable? %>
+              <%= f.label :remember_me do %>
+                <%= f.check_box :remember_me %>
+                <span><%= t ".remember_me"%></span>
+              <% end %>
             <% end %>
           </div>
+
           <div>
             <%= link_to t(".forgot_password"), class: "txt1" %>
           </div>
+
         </div>
         <div class="container-login100-form-btn">
           <%= f.submit t("log_in"), class: "login100-form-btn" %>

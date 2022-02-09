@@ -70,6 +70,15 @@ en:
     create:
       login_success: "Login success!!!"
       login_fail: "Login fail!!!"
+  devise:
+    failure:
+      user:
+        invalid: "Email or password invalid!"
+        already_authenticated: "You already authenticated!"
+    sessions:
+      user:
+        signed_in: "Signed in!"
+        signed_out: "Signed out!"
   errors:
     not_found: "Not Found!!!"
     not_found_product: "Not Found Product!!!"
