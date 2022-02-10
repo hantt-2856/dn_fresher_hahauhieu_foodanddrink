@@ -25,15 +25,7 @@
         </tr>
         <tr>
           <td class="text-start">
-            <%= form_tag class:"form-inline d-flex" do %>
-              <div class="form-group mb-2">
-                <%= t ".status", class:"sr-only" %>
-                <%= select_tag :status, options_for_select(Order.statuses_i18n,
-                  selected: Order.statuses[@order.status_i18n]), style:"width: 100px",
-                  class:"form-control-plaintext d-inline btn-outline-info" %>
-                <%= submit_tag t(".update"), class: "btn btn-warning mb-2" %>
-              </div>
-            <% end %>
+            <%= t ".status" %><%= @order.status %>
           </td>
           <td class="text-end">
             <%= t ".created_at" %><%= l(@order.created_at, format: :default) %>

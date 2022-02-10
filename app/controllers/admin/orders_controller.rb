@@ -1,4 +1,4 @@
-class Admin::OrdersController < Admin::BaseController
+class Admin::OrdersController < Admin::AdminController
   include ActionView::Helpers::UrlHelper
 
   before_action :find_order, :valid_status?, only: %i(update)

@@ -18,4 +18,8 @@ class ApplicationController < ActionController::Base
   def load_cart
     session[:cart] ||= {}
   end
+
+  rescue_from CanCan::AccessDenied do
+    redirect_to root_path, alert: t("cancancan.permission_denied")
+  end
 end
