@@ -17,7 +17,7 @@
     <%= t(".price_product", price: total_item(product)) %>
   </td>
   <td class="shoping__cart__item__close">
-    <%= button_to cart_path(id: product.id), method: :delete do %>
+    <%= button_to cart_path(id: product.id), method: :delete, data: {confirm: t(".confirm")} do %>
       <span class="icon_close"></span>
     <% end %>
   </td>

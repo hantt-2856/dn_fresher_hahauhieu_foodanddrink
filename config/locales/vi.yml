@@ -126,11 +126,46 @@ vi:
       checkout: "THANH TOÁN"
       cart: "GIỎ HÀNG"
       placeholder_code: "Nhập mã giảm giá"
+      confirm: "Bạn muốn làm mới giỏ hàng?"
     destroy:
       delete_success: "Đã xóa sản phẩm"
     reset:
       reset_success: "Đã làm mới giỏ hàng"
+  products:
+    index:
+      products: "Sản phẩm"
+      all_products: "Tất cả sản phẩm"
+      list_products: "Danh sách sản phẩm"
+      products_management: "Quản Lý Sản Phẩm"
+      list_products_empty: "Danh sách sản phẩm trống"
+      action: "Chức năng"
+      number: "Số thứ tự"
+      name: "Tên"
+      price: "Giá (vnđ)"
+      quantity: "Số lượng"
+      rating: "Đánh giá"
+    product:
+      confirm: "Bạn muốn xóa sản phẩm khỏi giỏ hàng?"
+      price_product: "%{price} VNĐ"
+      delete_item: "Xác nhận xóa?"
+    show:
+      add_cart: "Thêm vào giỏ hàng"
   admin:
+    products:
+      index:
+        products: "Sản phẩm"
+        all_products: "Tất cả sản phẩm"
+        list_products: "Danh sách sản phẩm"
+        products_management: "Quản Lý Sản Phẩm"
+        list_products_empty: "Danh sách sản phẩm trống"
+        action: "Chức năng"
+        number: "Số thứ tự"
+        name: "Tên"
+        price: "Giá (vnđ)"
+        quantity: "Số lượng"
+        rating: "Đánh giá"
+      all_products:
+        price: "%{price} vnđ"
     layouts:
       header:
         english: "Tiếng Anh"
@@ -146,8 +181,6 @@ vi:
         user: "Người dùng"
       footer:
         footer_admin: "© 2020 Copyright: OganiFood.com"
-    all_products:
-      price: "%{price} vnđ"
     orders:
       index:
         list_orders_empty: "Danh sách đơn hàng trống!"

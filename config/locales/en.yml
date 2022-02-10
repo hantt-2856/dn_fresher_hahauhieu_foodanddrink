@@ -130,11 +130,50 @@ en:
       checkout: "PROCEED TO CHECKOUT"
       cart: "CART"
       placeholder_code: "Enter your coupon code"
+      confirm: "Do you want to reset cart?"
     destroy:
       delete_success: "Deleted product"
     reset:
       reset_success: "Reset cart success"
+  products:
+    index:
+      products: "Products"
+      all_products: "All products"
+      list_products: "List products"
+      products_management: "Products Management"
+      list_products_empty: "List products empty"
+      action: "Action"
+      number: "Number"
+      name: "Name"
+      price: "Price ($)"
+      quantity: "Quantity"
+      rating: "Rating"
+      products: "Products"
+      all_products: "All products"
+    product:
+      confirm: "Do you want to romove item from cart?"
+      price_product: "%{price} VNĐ"
+      delete_item: "Are you sure?"
+    show:
+      add_cart: "ADD TO CART"
   admin:
+    products:
+      index:
+        products: "Products"
+        all_products: "All products"
+        list_products: "List products"
+        products_management: "Products Management"
+        list_products_empty: "List products empty"
+        action: "Action"
+        number: "Number"
+        name: "Name"
+        price: "Price ($)"
+        quantity: "Quantity"
+        rating: "Rating"
+        products: "Products"
+        all_products: "All products"
+      all_products:
+        price: "$%{price}"
     layouts:
       header:
         english: "English"
@@ -150,8 +189,6 @@ en:
         user: "User"
       footer:
         footer_admin: "© 2020 Copyright: OganiFood.com"
-    all_products:
-      price: "$%{price}"
     orders:
       index:
         list_orders_empty: "List order is empty!"
